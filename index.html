@@ -4,10 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-    
+    <main class="container">
+        <section class="litle-field">
+            <input class="player1-field" placeholder="Jogador 1">
+            <div class="input-player2">
+                <input class="player2-field" placeholder="Jogador 2">
+                <div class="box-wrapper">
+                    <div class="scroll-ball"></div>
+                </div>
+            </div>
+            <div class="match-type-box">
+                <h3 class="choice-field-match">Tipo de Partida</h3>
+                <div class="choice-match">
+                    <span class="choice-title">Melhor de 3</span>
+                    <div class="box-wrapper box-match">
+                        <div class="scroll-ball choice-white"></div>
+                    </div>
+                    <span class="choice-title">Melhor de 5</span>
+                </div>
+            </div>
+            <button class="button button-start-game">Jogar</button>
+            <ul>
+                <li class="match-history-box">
+                    <h3 class="match-history-title">Histórico de Partidas</h3>
+                    <div class="winner">
+                        <h4 class="winner-title">Vencedor</h4>
+                        <span class="winner-player">Jogador 1</span>
+                    </div>
+                    <span class="scene-separatior">Cenário</span>
+                </li>
+            </ul>
+        </section>
+        <section class="big-field">
+            <div class="scenary-box-game"></div>
+                <div class="scenary-game-box">x</div>
+                <div class="scenary-game-box">0</div>
+                <div class="scenary-game-box"></div>
+                <div class="scenary-game-box"></div>
+                <div class="scenary-game-box"></div>
+                <div class="scenary-game-box"></div>
+                <div class="scenary-game-box"></div>                
+            </div>
+        </section>
+        <section class="litle-field"></section>
+    </main>
     <script src="script.js"></script>    
 </body>
 </html>
